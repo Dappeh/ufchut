@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>UFC HUT · Design editor</title>
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="edit.css?v=9503790af2">
+</head>
+<body>
+<!-- The design editor: changes the site's look and layout on this device only. A design goes live on
+     the real site only when it is put there on purpose (see CLAUDE.md, "Design editor"). -->
+<div class="app" id="app">
+  <header class="bar" id="bar"></header>
+  <aside class="side">
+    <nav class="tabs" id="tabs" aria-label="Editor panels"></nav>
+    <div class="panel" id="panel"><p class="muted">Loading the editor…</p></div>
+  </aside>
+  <main class="stage" id="stage">
+    <div class="frame" id="frame"><iframe id="preview" title="Preview of the site"></iframe></div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="design-core.js?v=3349c8647e" defer></script>
+<script src="edit.js?v=aa10b35c43" defer></script>
+</body>
+</html>
