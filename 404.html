@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UFC HUT</title>
+<script>
+  // A fight's own page (vs/<red>-<blue>/) is removed once the fight has happened: open the same
+  // comparison on the main page instead. Anything else goes to the main page.
+  (function () {
+    var m = location.pathname.match(/^(.*?\/)vs\/(\d+)-(\d+)\/?$/);
+    var top = m ? m[1] : (location.pathname.match(/^\/[^\/]+\//) || ["/"])[0];
+    location.replace(top + (m ? "?a=" + m[2] + "&b=" + m[3] : ""));
+  })();
+</script>
+<style>body { font: 16px/1.5 system-ui, sans-serif; margin: 40px 16px; color: #15171a; background: #f4f5f7; }</style>
+</head>
+<body>
+<p>Page not found. Taking you to UFC HUT…</p>
+</body>
+</html>
