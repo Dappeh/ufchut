@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="r"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="512" height="512" fill="#1b5fc1"/>
+    <path d="M0 0H320L192 512H0Z" fill="#c62828"/>
+  </g>
+  <text x="256" y="318" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="200" fill="#fff" letter-spacing="-6">VS</text>
+</svg>
